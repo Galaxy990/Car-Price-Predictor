@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <title>Car Price Calculator</title>
+        <link rel="stylesheet" href="{{url_for('static', filename = 'css/style1.css')}}">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            #outpt { color : #ff0000; font-weight: bold }
+        </style>
+    </head>
+
+    <body>
+        <div class="container">
+            <div class="title">Car Price Calculator</div>
+            <form action="{{url_for('predict')}}" method="post">
+                <div class="car-details">
+                    <div class="input-box">
+                        <span class="details">Year of Purchase</span>
+                        <input id="first" name="Year" type="text" value="{{yr}}" readonly>  
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Original Price(In Lakhs)</span>
+                        <input id="second" name="Present_Price" type="text" value="{{orgp}}" readonly>  
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Kilometers Driven</span>
+                        <input id="third" name="Kms_Driven" type="text" value="{{kmdrv}}" readonly>  
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">No. Of Previous Owners</span>
+                        <input id="fourth" name="Owner" type="text" value="{{ownr}}" readonly>  
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Fuel Type</span>
+                        <input id="fifth" name="Fuel_Type_Petrol" type="text" value="{{fuel}}" readonly> 
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Seller Type</span>
+                        <input id="sixth" name="Seller_Type_Individual" type="text" value="{{seller}}" readonly> 
+                    </div>
+
+                    <div class="input-box">
+                        <span class="details">Transmission Type</span>
+                        <input id="seventh" name="Transmission_Manual" type="text" value="{{trans}}" readonly> 
+                    </div>
+                </div>
+
+                <div class="button">
+                    <input id="sub" type="submit" value="Calculate Selling Price">
+                </div>
+
+                <div class="output">
+                    <h3 align="center" id="outpt" class="opt">{{prediction_text}}</h3>
+                </div>
+            </form>
+
+            <form action="{{url_for('refresh')}}">
+                <div class="refresh">
+                    <input type="submit" name="refr" value="Reset">
+                </div>
+            </form>
+
+            </div>
+        </div>
+    </body>
+</html>
