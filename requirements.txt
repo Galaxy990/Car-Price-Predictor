@@ -113,9 +113,6 @@ python-lsp-jsonrpc==1.0.0
 python-lsp-server==1.3.3
 python-slugify
 pytz==2021.3
-pywin32==303
-pywin32-ctypes
-pywinpty==1.1.6
 PyYAML==6.0
 pyzmq
 QDarkStyle==2.8.1
