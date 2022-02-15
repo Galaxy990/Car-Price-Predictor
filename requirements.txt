@@ -155,7 +155,6 @@ tornado
 traitlets
 typed-ast==1.5.2
 typing_extensions==4.0.1
-ujson==5.1.0
 Unidecode
 urllib3==1.26.8
 watchdog
