@@ -109,7 +109,6 @@ PySocks
 python-dateutil
 python-jsonrpc-server
 python-lsp-jsonrpc==1.0.0
-python-lsp-server==1.3.3
 python-slugify
 pytz==2021.3
 PyYAML==6.0
@@ -139,8 +138,6 @@ sphinxcontrib-jsmath==1.0.1
 sphinxcontrib-qthelp==1.0.3
 sphinxcontrib-serializinghtml==1.1.5
 sphinxcontrib-websupport
-spyder==4.0.1
-spyder-kernels==1.8.1
 terminado==0.12.1
 testpath
 text-unidecode
